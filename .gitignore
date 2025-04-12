@@ -1,4 +1,5 @@
 # Local .terraform directories
+**.vscode**
 **/.terraform/*
 
 # .tfstate files
