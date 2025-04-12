@@ -10,7 +10,7 @@ clean:
 
 init: validate-aws validate-env validate-region clean
 	terraform init \
-	-backend-config=bucket=$(ORG)-$(REGION)-tf-state \
+	-backend-config=bucket=$(ORG)-$(APP)-$(REGION)-tf-state \
 	-backend-config=key="$(APP)/$(ENV)/$(REGION)/terraform.tfstate" \
 	-backend-config=region=$(REGION) \
 	$(ARGS)
